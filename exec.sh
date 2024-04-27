@@ -1,0 +1,1 @@
+npm init -y; npm i -D @types/{multer,node,express} ts-node-dev; npm i multer express dayjs; 
