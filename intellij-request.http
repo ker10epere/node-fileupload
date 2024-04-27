@@ -1,0 +1,20 @@
+POST http://localhost:3000/fileupload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="info"; filename=".gitignore"
+Content-Type: text/plain
+Content-Transfer-Encoding: BASE64
+
+< ./.gitignore
+
+--WebAppBoundary--
+
+--WebAppBoundary
+Content-Disposition: form-data; name="info"; filename="package.json"
+Content-Type: application/json
+Content-Transfer-Encoding: BASE64
+
+< ./package.json
+
+--WebAppBoundary--
